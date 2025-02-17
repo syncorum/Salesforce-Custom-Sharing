@@ -1,0 +1,28 @@
+<template>
+    <lightning-modal-header label="User Access Form"></lightning-modal-header>
+    <lightning-modal-body>
+        <lightning-record-picker
+            object-api-name="User"
+            label="User"
+            data-name="userPicker">
+        </lightning-record-picker>
+
+        <lightning-input 
+            type="date" 
+            label="Expiry Date"
+            data-name="expiryDate">
+        </lightning-input>
+
+        <lightning-combobox 
+            label="Access Level"
+            data-name="accessLevel"
+            options={accessOptions}
+            value={selectedAccessLevel}>
+        </lightning-combobox>
+    </lightning-modal-body>
+
+    <lightning-modal-footer>
+        <lightning-button label="Cancel" variant="neutral" onclick={closeModal}></lightning-button>
+        <lightning-button label="Save" variant="brand" onclick={save}></lightning-button>
+    </lightning-modal-footer>
+</template>

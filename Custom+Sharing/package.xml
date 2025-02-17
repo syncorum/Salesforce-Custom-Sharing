@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom Sharing</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <types>
+        <members>DeleteSharedRecordSchedulable</members>
+        <members>SharingRecordHandler</members>
+        <members>SharingRecordHandlerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Shared_Record__c.Expiry_Date__c</members>
+        <members>Shared_Record__c.Object_Record_Id__c</members>
+        <members>Shared_Record__c.RecordId__c</members>
+        <members>Shared_Record__c.User_Id__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Shared_Record__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Shared_Record__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Shared_Record__c-Shared Record Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>recordSharing</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Shared_Record__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Sharing_Record_Permission</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>62.0</version>
+</Package>
